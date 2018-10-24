@@ -1,0 +1,5 @@
+D:\Myfolder\CSharpStudy\静态成员\静态类\bin\Debug\静态类.exe.config
+D:\Myfolder\CSharpStudy\静态成员\静态类\bin\Debug\静态类.exe
+D:\Myfolder\CSharpStudy\静态成员\静态类\bin\Debug\静态类.pdb
+D:\Myfolder\CSharpStudy\静态成员\静态类\obj\Debug\静态类.exe
+D:\Myfolder\CSharpStudy\静态成员\静态类\obj\Debug\静态类.pdb

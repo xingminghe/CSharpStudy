@@ -1,0 +1,6 @@
+D:\Myfolder\CSharpStudy\静态成员\静态成员\bin\Debug\静态成员.exe.config
+D:\Myfolder\CSharpStudy\静态成员\静态成员\bin\Debug\静态成员.exe
+D:\Myfolder\CSharpStudy\静态成员\静态成员\bin\Debug\静态成员.pdb
+D:\Myfolder\CSharpStudy\静态成员\静态成员\obj\Debug\静态成员.csprojResolveAssemblyReference.cache
+D:\Myfolder\CSharpStudy\静态成员\静态成员\obj\Debug\静态成员.exe
+D:\Myfolder\CSharpStudy\静态成员\静态成员\obj\Debug\静态成员.pdb

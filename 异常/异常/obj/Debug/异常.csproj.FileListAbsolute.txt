@@ -1,0 +1,6 @@
+D:\Myfolder\CSharpStudy\异常\异常\bin\Debug\异常.exe.config
+D:\Myfolder\CSharpStudy\异常\异常\bin\Debug\异常.exe
+D:\Myfolder\CSharpStudy\异常\异常\bin\Debug\异常.pdb
+D:\Myfolder\CSharpStudy\异常\异常\obj\Debug\异常.csprojResolveAssemblyReference.cache
+D:\Myfolder\CSharpStudy\异常\异常\obj\Debug\异常.exe
+D:\Myfolder\CSharpStudy\异常\异常\obj\Debug\异常.pdb
