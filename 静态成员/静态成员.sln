@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "静态成员", "静态成�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "静态类", "静态类\静态类.csproj", "{FF2C0CFB-F83B-46CD-8897-301A399AE8D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSpace", "NameSpace\NameSpace.csproj", "{7580224D-00B1-4079-98F6-96ECE1B189D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuoYin", "SuoYin\SuoYin.csproj", "{1162A0E2-42CD-4639-A244-39402B0E4170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FF2C0CFB-F83B-46CD-8897-301A399AE8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2C0CFB-F83B-46CD-8897-301A399AE8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2C0CFB-F83B-46CD-8897-301A399AE8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7580224D-00B1-4079-98F6-96ECE1B189D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7580224D-00B1-4079-98F6-96ECE1B189D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7580224D-00B1-4079-98F6-96ECE1B189D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7580224D-00B1-4079-98F6-96ECE1B189D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1162A0E2-42CD-4639-A244-39402B0E4170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1162A0E2-42CD-4639-A244-39402B0E4170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1162A0E2-42CD-4639-A244-39402B0E4170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1162A0E2-42CD-4639-A244-39402B0E4170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
