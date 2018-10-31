@@ -47,6 +47,7 @@ namespace CShapDemo
             {
                 MessageBox.Show("读取文件出现错误，具体如下：" + ex.Message, "系统消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            loadDatatoDataGrid(objlistStudent);
         }
         private List<string> ReadFileToList(string filepath)//把某一个文件读取
         {
@@ -68,12 +69,23 @@ namespace CShapDemo
             }
             
             
-return objList;
+            return objList;
 
         }
         private void loadDatatoDataGrid(List<string> objList)
         {
-
+            foreach(string item in objList)
+            {
+                string[] strArray = item.Trim().Split(',');
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dgvStudent);
+                row.Cells[0].Value = strArray[0];
+                row.Cells[1].Value = strArray[1];
+                row.Cells[2].Value = strArray[2];
+                row.Cells[3].Value = strArray[3];
+                row.Cells[4].Value = strArray[4];
+                dgvStudent.Rows.Add(row);
+            }
         }
     }
 }
