@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CShapDemo
 {
     public partial class FormMain : Form
     {
         private string fileName = string.Empty;//定义文件读取文件路径变量
+        private List<string> objlistStudent = new List<string>();
         public FormMain()
         {
             InitializeComponent();
@@ -37,6 +39,41 @@ namespace CShapDemo
             {
                 fileName = openfile.FileName;
             }
+            try
+            {
+                objlistStudent = ReadFileToList(fileName);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("读取文件出现错误，具体如下：" + ex.Message, "系统消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private List<string> ReadFileToList(string filepath)//把某一个文件读取
+        {
+            List<string> objList = new List<string>();
+            string line = string.Empty;
+            try
+            {
+                StreamReader file = new StreamReader(filepath,Encoding.Default);
+                while ((line = file.ReadLine()) != null)
+                {
+                    objList.Add(line);
+                }
+                file.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
+            
+return objList;
+
+        }
+        private void loadDatatoDataGrid(List<string> objList)
+        {
+
         }
     }
 }
