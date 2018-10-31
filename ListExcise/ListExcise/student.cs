@@ -8,12 +8,12 @@ namespace ListExcise
 {
     class student
     {
-        public int SNO { get; set; }
-        public string SName { get; set; }
-        public bool Gender { get; set; }
-        public DateTime Brithday { get; set; }
-        public string Major { get; set; }
-        public string Telephone { get; set; }
-        public string EmailAddress { get; set; }
+        public  string SNO { get; set; }
+        public  string SName { get; set; }
+        public  bool Gender { get; set; }
+        public  DateTime Brithday { get; set; }
+        public  string Major { get; set; }
+        public  string Telephone { get; set; }
+        public  string EmailAddress { get; set; }
     }
 }

@@ -28,81 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvInforList = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Major = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSNO = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.rdbMale = new System.Windows.Forms.RadioButton();
-            this.rdbFemle = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpBorthday = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.cmbMajor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTelephone = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dtpBorthday = new System.Windows.Forms.DateTimePicker();
+            this.rdbFemle = new System.Windows.Forms.RadioButton();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
             this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.txtTelephone = new System.Windows.Forms.TextBox();
+            this.txtSName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSNO = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvInforList
             // 
+            this.dgvInforList.AllowUserToAddRows = false;
+            this.dgvInforList.AllowUserToDeleteRows = false;
+            this.dgvInforList.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvInforList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvInforList.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInforList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvInforList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInforList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dgvInforList.Location = new System.Drawing.Point(12, 22);
+            this.SNO,
+            this.SName,
+            this.Major,
+            this.Telephone});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInforList.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvInforList.EnableHeadersVisualStyles = false;
+            this.dgvInforList.Location = new System.Drawing.Point(16, 29);
+            this.dgvInforList.Margin = new System.Windows.Forms.Padding(4);
             this.dgvInforList.Name = "dgvInforList";
+            this.dgvInforList.ReadOnly = true;
             this.dgvInforList.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvInforList.RowHeadersVisible = false;
             this.dgvInforList.RowTemplate.Height = 23;
-            this.dgvInforList.Size = new System.Drawing.Size(504, 232);
-            this.dgvInforList.TabIndex = 0;
+            this.dgvInforList.Size = new System.Drawing.Size(672, 309);
+            this.dgvInforList.TabIndex = 1;
             // 
-            // Column1
+            // SNO
             // 
-            this.Column1.HeaderText = "姓名";
-            this.Column1.Name = "Column1";
+            this.SNO.DataPropertyName = "SNO";
+            this.SNO.HeaderText = "学号";
+            this.SNO.Name = "SNO";
+            this.SNO.ReadOnly = true;
+            this.SNO.Width = 167;
             // 
-            // Column2
+            // SName
             // 
-            this.Column2.HeaderText = "性别";
-            this.Column2.Name = "Column2";
+            this.SName.DataPropertyName = "SName";
+            this.SName.HeaderText = "姓名";
+            this.SName.Name = "SName";
+            this.SName.ReadOnly = true;
+            this.SName.Width = 168;
             // 
-            // Column3
+            // Major
             // 
-            this.Column3.HeaderText = "学号";
-            this.Column3.Name = "Column3";
+            this.Major.DataPropertyName = "Major";
+            this.Major.HeaderText = "专业";
+            this.Major.Name = "Major";
+            this.Major.ReadOnly = true;
+            this.Major.Width = 167;
             // 
-            // Column4
+            // Telephone
             // 
-            this.Column4.HeaderText = "出生日期";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "所学专业";
-            this.Column5.Name = "Column5";
+            this.Telephone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Telephone.DataPropertyName = "Telephone";
+            this.Telephone.HeaderText = "电话号码";
+            this.Telephone.Name = "Telephone";
+            this.Telephone.ReadOnly = true;
             // 
             // buttAdd
             // 
-            this.buttAdd.Location = new System.Drawing.Point(646, 274);
+            this.buttAdd.Location = new System.Drawing.Point(861, 365);
+            this.buttAdd.Margin = new System.Windows.Forms.Padding(4);
             this.buttAdd.Name = "buttAdd";
-            this.buttAdd.Size = new System.Drawing.Size(77, 27);
-            this.buttAdd.TabIndex = 1;
+            this.buttAdd.Size = new System.Drawing.Size(103, 36);
+            this.buttAdd.TabIndex = 0;
             this.buttAdd.Text = "添加";
             this.buttAdd.UseVisualStyleBackColor = true;
             this.buttAdd.Click += new System.EventHandler(this.button1_Click);
@@ -124,157 +159,181 @@
             this.groupBox1.Controls.Add(this.txtSNO);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(32, 322);
+            this.groupBox1.Location = new System.Drawing.Point(43, 429);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(665, 116);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(887, 155);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "学生信息";
             // 
-            // label1
+            // cmbMajor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "学号";
-            // 
-            // txtSNO
-            // 
-            this.txtSNO.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtSNO.Location = new System.Drawing.Point(44, 22);
-            this.txtSNO.Name = "txtSNO";
-            this.txtSNO.Size = new System.Drawing.Size(100, 21);
-            this.txtSNO.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(165, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "姓名";
-            // 
-            // txtSName
-            // 
-            this.txtSName.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtSName.Location = new System.Drawing.Point(200, 21);
-            this.txtSName.Name = "txtSName";
-            this.txtSName.Size = new System.Drawing.Size(100, 21);
-            this.txtSName.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(321, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "性别";
-            // 
-            // rdbMale
-            // 
-            this.rdbMale.AutoSize = true;
-            this.rdbMale.Checked = true;
-            this.rdbMale.Location = new System.Drawing.Point(357, 23);
-            this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(35, 16);
-            this.rdbMale.TabIndex = 2;
-            this.rdbMale.TabStop = true;
-            this.rdbMale.Text = "男";
-            this.rdbMale.UseVisualStyleBackColor = true;
-            // 
-            // rdbFemle
-            // 
-            this.rdbFemle.AutoSize = true;
-            this.rdbFemle.Location = new System.Drawing.Point(398, 24);
-            this.rdbFemle.Name = "rdbFemle";
-            this.rdbFemle.Size = new System.Drawing.Size(35, 16);
-            this.rdbFemle.TabIndex = 2;
-            this.rdbFemle.Text = "女";
-            this.rdbFemle.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(473, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "出生日期";
+            this.cmbMajor.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cmbMajor.FormattingEnabled = true;
+            this.cmbMajor.Items.AddRange(new object[] {
+            "电子工程",
+            "英语",
+            "计算机",
+            "土木工程",
+            "建筑设计"});
+            this.cmbMajor.Location = new System.Drawing.Point(59, 100);
+            this.cmbMajor.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMajor.Name = "cmbMajor";
+            this.cmbMajor.Size = new System.Drawing.Size(132, 24);
+            this.cmbMajor.TabIndex = 5;
             // 
             // dtpBorthday
             // 
             this.dtpBorthday.CalendarForeColor = System.Drawing.Color.Maroon;
             this.dtpBorthday.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
             this.dtpBorthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBorthday.Location = new System.Drawing.Point(532, 23);
+            this.dtpBorthday.Location = new System.Drawing.Point(709, 31);
+            this.dtpBorthday.Margin = new System.Windows.Forms.Padding(4);
             this.dtpBorthday.Name = "dtpBorthday";
-            this.dtpBorthday.Size = new System.Drawing.Size(101, 21);
-            this.dtpBorthday.TabIndex = 3;
+            this.dtpBorthday.Size = new System.Drawing.Size(133, 22);
+            this.dtpBorthday.TabIndex = 4;
             // 
-            // label5
+            // rdbFemle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "专业";
+            this.rdbFemle.AutoSize = true;
+            this.rdbFemle.Location = new System.Drawing.Point(531, 32);
+            this.rdbFemle.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbFemle.Name = "rdbFemle";
+            this.rdbFemle.Size = new System.Drawing.Size(43, 21);
+            this.rdbFemle.TabIndex = 3;
+            this.rdbFemle.Text = "女";
+            this.rdbFemle.UseVisualStyleBackColor = true;
             // 
-            // cmbMajor
+            // rdbMale
             // 
-            this.cmbMajor.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cmbMajor.FormattingEnabled = true;
-            this.cmbMajor.Location = new System.Drawing.Point(44, 75);
-            this.cmbMajor.Name = "cmbMajor";
-            this.cmbMajor.Size = new System.Drawing.Size(100, 20);
-            this.cmbMajor.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(165, 77);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "电话";
-            // 
-            // txtTelephone
-            // 
-            this.txtTelephone.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtTelephone.Location = new System.Drawing.Point(200, 74);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(100, 21);
-            this.txtTelephone.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(322, 77);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "邮箱地址";
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Checked = true;
+            this.rdbMale.Location = new System.Drawing.Point(476, 31);
+            this.rdbMale.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(43, 21);
+            this.rdbMale.TabIndex = 2;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "男";
+            this.rdbMale.UseVisualStyleBackColor = true;
             // 
             // txtEmailAddress
             // 
             this.txtEmailAddress.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtEmailAddress.Location = new System.Drawing.Point(381, 74);
+            this.txtEmailAddress.Location = new System.Drawing.Point(508, 99);
+            this.txtEmailAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(252, 21);
-            this.txtEmailAddress.TabIndex = 1;
+            this.txtEmailAddress.Size = new System.Drawing.Size(335, 22);
+            this.txtEmailAddress.TabIndex = 7;
+            // 
+            // txtTelephone
+            // 
+            this.txtTelephone.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtTelephone.Location = new System.Drawing.Point(267, 99);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(132, 22);
+            this.txtTelephone.TabIndex = 6;
+            // 
+            // txtSName
+            // 
+            this.txtSName.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSName.Location = new System.Drawing.Point(267, 28);
+            this.txtSName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSName.Name = "txtSName";
+            this.txtSName.Size = new System.Drawing.Size(132, 22);
+            this.txtSName.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(429, 103);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "邮箱地址";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(631, 37);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "出生日期";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(220, 103);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "电话";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(428, 35);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "性别";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(220, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "姓名";
+            // 
+            // txtSNO
+            // 
+            this.txtSNO.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSNO.Location = new System.Drawing.Point(59, 29);
+            this.txtSNO.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSNO.Name = "txtSNO";
+            this.txtSNO.Size = new System.Drawing.Size(132, 22);
+            this.txtSNO.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 104);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "专业";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "学号";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 600);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttAdd);
             this.Controls.Add(this.dgvInforList);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforList)).EndInit();
@@ -287,11 +346,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvInforList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button buttAdd;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbMajor;
@@ -309,6 +363,10 @@
         private System.Windows.Forms.TextBox txtSNO;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SNO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Major;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
     }
 }
 
