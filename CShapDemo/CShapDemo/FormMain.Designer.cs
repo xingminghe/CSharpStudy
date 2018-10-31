@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gBoxStudentQuery = new System.Windows.Forms.GroupBox();
             this.txtQueryTel = new System.Windows.Forms.TextBox();
@@ -81,7 +83,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(178, 496);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,9 +101,9 @@
             this.gBoxStudentQuery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBoxStudentQuery.ForeColor = System.Drawing.Color.White;
             this.gBoxStudentQuery.Location = new System.Drawing.Point(198, 28);
-            this.gBoxStudentQuery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBoxStudentQuery.Margin = new System.Windows.Forms.Padding(2);
             this.gBoxStudentQuery.Name = "gBoxStudentQuery";
-            this.gBoxStudentQuery.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBoxStudentQuery.Padding = new System.Windows.Forms.Padding(2);
             this.gBoxStudentQuery.Size = new System.Drawing.Size(722, 82);
             this.gBoxStudentQuery.TabIndex = 1;
             this.gBoxStudentQuery.TabStop = false;
@@ -111,7 +113,7 @@
             // 
             this.txtQueryTel.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtQueryTel.Location = new System.Drawing.Point(554, 34);
-            this.txtQueryTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQueryTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryTel.Name = "txtQueryTel";
             this.txtQueryTel.Size = new System.Drawing.Size(91, 19);
             this.txtQueryTel.TabIndex = 1;
@@ -131,7 +133,7 @@
             // 
             this.txtQueryName.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtQueryName.Location = new System.Drawing.Point(293, 34);
-            this.txtQueryName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQueryName.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryName.Name = "txtQueryName";
             this.txtQueryName.Size = new System.Drawing.Size(91, 19);
             this.txtQueryName.TabIndex = 1;
@@ -151,7 +153,7 @@
             // 
             this.txtQueryNo.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtQueryNo.Location = new System.Drawing.Point(77, 34);
-            this.txtQueryNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQueryNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryNo.Name = "txtQueryNo";
             this.txtQueryNo.Size = new System.Drawing.Size(91, 19);
             this.txtQueryNo.TabIndex = 1;
@@ -172,13 +174,15 @@
             // 
             this.dgvStudent.AllowUserToAddRows = false;
             this.dgvStudent.AllowUserToDeleteRows = false;
+            this.dgvStudent.AllowUserToResizeColumns = false;
+            this.dgvStudent.AllowUserToResizeRows = false;
             this.dgvStudent.BackgroundColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -190,11 +194,26 @@
             this.Column5});
             this.dgvStudent.EnableHeadersVisualStyles = false;
             this.dgvStudent.Location = new System.Drawing.Point(198, 131);
-            this.dgvStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvStudent.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStudent.Name = "dgvStudent";
             this.dgvStudent.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudent.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudent.RowHeadersVisible = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.dgvStudent.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStudent.RowTemplate.Height = 24;
+            this.dgvStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudent.Size = new System.Drawing.Size(600, 220);
             this.dgvStudent.TabIndex = 2;
             // 
@@ -239,7 +258,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(824, 198);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(86, 26);
             this.btnAdd.TabIndex = 3;
@@ -253,7 +272,7 @@
             this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImport.ForeColor = System.Drawing.Color.White;
             this.btnImport.Location = new System.Drawing.Point(824, 156);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(2);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(86, 26);
             this.btnImport.TabIndex = 3;
@@ -268,7 +287,7 @@
             this.btnModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModify.ForeColor = System.Drawing.Color.White;
             this.btnModify.Location = new System.Drawing.Point(824, 238);
-            this.btnModify.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(2);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(86, 26);
             this.btnModify.TabIndex = 3;
@@ -282,7 +301,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(824, 280);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 26);
             this.btnDelete.TabIndex = 3;
@@ -313,9 +332,9 @@
             this.gBoxStudentDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBoxStudentDetail.ForeColor = System.Drawing.Color.White;
             this.gBoxStudentDetail.Location = new System.Drawing.Point(198, 356);
-            this.gBoxStudentDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBoxStudentDetail.Margin = new System.Windows.Forms.Padding(2);
             this.gBoxStudentDetail.Name = "gBoxStudentDetail";
-            this.gBoxStudentDetail.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBoxStudentDetail.Padding = new System.Windows.Forms.Padding(2);
             this.gBoxStudentDetail.Size = new System.Drawing.Size(722, 136);
             this.gBoxStudentDetail.TabIndex = 4;
             this.gBoxStudentDetail.TabStop = false;
@@ -327,7 +346,7 @@
             this.rbFemale.BackColor = System.Drawing.Color.DodgerBlue;
             this.rbFemale.ForeColor = System.Drawing.Color.Yellow;
             this.rbFemale.Location = new System.Drawing.Point(202, 76);
-            this.rbFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbFemale.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(38, 17);
             this.rbFemale.TabIndex = 3;
@@ -341,7 +360,7 @@
             this.rbMale.BackColor = System.Drawing.Color.DodgerBlue;
             this.rbMale.ForeColor = System.Drawing.Color.Yellow;
             this.rbMale.Location = new System.Drawing.Point(165, 76);
-            this.rbMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbMale.Margin = new System.Windows.Forms.Padding(2);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(38, 17);
             this.rbMale.TabIndex = 3;
@@ -356,7 +375,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(646, 85);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(66, 26);
             this.btnCancel.TabIndex = 3;
@@ -370,7 +389,7 @@
             this.btnSubmig.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmig.ForeColor = System.Drawing.Color.White;
             this.btnSubmig.Location = new System.Drawing.Point(646, 43);
-            this.btnSubmig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmig.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmig.Name = "btnSubmig";
             this.btnSubmig.Size = new System.Drawing.Size(66, 26);
             this.btnSubmig.TabIndex = 3;
@@ -381,7 +400,7 @@
             // 
             this.dtpBorthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBorthday.Location = new System.Drawing.Point(482, 32);
-            this.dtpBorthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpBorthday.Margin = new System.Windows.Forms.Padding(2);
             this.dtpBorthday.Name = "dtpBorthday";
             this.dtpBorthday.Size = new System.Drawing.Size(151, 19);
             this.dtpBorthday.TabIndex = 2;
@@ -390,7 +409,7 @@
             // 
             this.btnSelectPic.ForeColor = System.Drawing.Color.White;
             this.btnSelectPic.Location = new System.Drawing.Point(26, 76);
-            this.btnSelectPic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectPic.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectPic.Name = "btnSelectPic";
             this.btnSelectPic.Size = new System.Drawing.Size(46, 21);
             this.btnSelectPic.TabIndex = 1;
@@ -401,7 +420,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(4, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(105, 118);
             this.pictureBox2.TabIndex = 0;
@@ -488,7 +507,7 @@
             // 
             this.txtAddress.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtAddress.Location = new System.Drawing.Point(183, 106);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(450, 19);
             this.txtAddress.TabIndex = 1;
@@ -498,7 +517,7 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtEmail.Location = new System.Drawing.Point(459, 74);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(174, 19);
             this.txtEmail.TabIndex = 1;
@@ -508,7 +527,7 @@
             // 
             this.txtTel.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtTel.Location = new System.Drawing.Point(303, 74);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(91, 19);
             this.txtTel.TabIndex = 1;
@@ -518,7 +537,7 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtName.Location = new System.Drawing.Point(303, 32);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(91, 19);
             this.txtName.TabIndex = 1;
@@ -528,7 +547,7 @@
             // 
             this.txtNo.BackColor = System.Drawing.Color.DodgerBlue;
             this.txtNo.Location = new System.Drawing.Point(165, 34);
-            this.txtNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNo.Name = "txtNo";
             this.txtNo.Size = new System.Drawing.Size(91, 19);
             this.txtNo.TabIndex = 1;
@@ -541,7 +560,7 @@
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(901, 3);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(34, 26);
             this.btnExit.TabIndex = 3;
@@ -564,7 +583,7 @@
             this.Controls.Add(this.gBoxStudentQuery);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

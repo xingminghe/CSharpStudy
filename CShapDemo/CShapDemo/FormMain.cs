@@ -86,6 +86,10 @@ namespace CShapDemo
                 row.Cells[4].Value = strArray[4];
                 dgvStudent.Rows.Add(row);
             }
+        }//把list里的数据导入data grid view
+        //把data grid view的第一行数据的明细展示到下面的明细框内
+        private void loadDataToDetial(string currentStudent)
+        {
         }
     }
 }
