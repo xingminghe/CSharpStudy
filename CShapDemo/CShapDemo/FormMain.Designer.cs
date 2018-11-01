@@ -216,6 +216,7 @@
             this.dgvStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudent.Size = new System.Drawing.Size(600, 220);
             this.dgvStudent.TabIndex = 2;
+            this.dgvStudent.SelectionChanged += new System.EventHandler(this.dgvStudent_SelectionChanged);
             // 
             // Column1
             // 
@@ -506,50 +507,60 @@
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txtAddress.Location = new System.Drawing.Point(183, 106);
+            this.txtAddress.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.ForeColor = System.Drawing.Color.Yellow;
+            this.txtAddress.Location = new System.Drawing.Point(195, 106);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(450, 19);
+            this.txtAddress.Size = new System.Drawing.Size(438, 23);
             this.txtAddress.TabIndex = 1;
             this.txtAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtEmail.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Yellow;
             this.txtEmail.Location = new System.Drawing.Point(459, 74);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(174, 19);
+            this.txtEmail.Size = new System.Drawing.Size(174, 23);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtTel
             // 
             this.txtTel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtTel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTel.ForeColor = System.Drawing.Color.Yellow;
             this.txtTel.Location = new System.Drawing.Point(303, 74);
             this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(91, 19);
+            this.txtTel.Size = new System.Drawing.Size(91, 23);
             this.txtTel.TabIndex = 1;
             this.txtTel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtName.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Yellow;
             this.txtName.Location = new System.Drawing.Point(303, 32);
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(91, 19);
+            this.txtName.Size = new System.Drawing.Size(91, 23);
             this.txtName.TabIndex = 1;
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNo
             // 
             this.txtNo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtNo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNo.ForeColor = System.Drawing.Color.Yellow;
             this.txtNo.Location = new System.Drawing.Point(165, 34);
             this.txtNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNo.Name = "txtNo";
-            this.txtNo.Size = new System.Drawing.Size(91, 19);
+            this.txtNo.Size = new System.Drawing.Size(91, 23);
             this.txtNo.TabIndex = 1;
             this.txtNo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 

@@ -48,7 +48,23 @@ namespace CShapDemo
                 MessageBox.Show("读取文件出现错误，具体如下：" + ex.Message, "系统消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             loadDatatoDataGrid(objlistStudent);
+
+            string currentSNO = dgvStudent.Rows[2].Cells[0].Value.ToString();
+            string [] currentDetail = GetStudentBySNO(currentSNO).Split(',');
+            loadDataToDetial(currentDetail[0],currentDetail[1],currentDetail[2],currentDetail[3],currentDetail[4],currentDetail[5],currentDetail[6], currentDetail[7]);
         }
+
+        private void dgvStudent_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvStudent.CurrentRow.Selected == false) return;
+            else
+            {
+                string currentSNO = dgvStudent.CurrentRow.Cells[0].Value.ToString();
+                string[] currentDetail = GetStudentBySNO(currentSNO).Split(',');
+                loadDataToDetial(currentDetail[0], currentDetail[1], currentDetail[2], currentDetail[3], currentDetail[4], currentDetail[5], currentDetail[6], currentDetail[7]);
+            }
+        }
+
         private List<string> ReadFileToList(string filepath)//把某一个文件读取
         {
             List<string> objList = new List<string>();
@@ -88,8 +104,36 @@ namespace CShapDemo
             }
         }//把list里的数据导入data grid view
         //把data grid view的第一行数据的明细展示到下面的明细框内
-        private void loadDataToDetial(string currentStudent)
+        private void loadDataToDetial(string sno,string sname,string sex,string birthday,string mobile,
+                                                        string emial,string homeaddress,string photo)
         {
+            txtNo.Text = sno;
+            txtName.Text = sname;
+            if (sex == "男")
+                rbMale.Checked = true;
+            else rbFemale.Checked = true;
+            dtpBorthday.Text = birthday;
+            txtTel.Text = mobile;
+            txtAddress.Text = homeaddress;
+            txtEmail.Text = emial;
+            if (photo == null) return;
+
         }
+
+        private string GetStudentBySNO(string SNO)
+        {
+            string currentstudent = string.Empty;
+            foreach (string item in objlistStudent)
+            {
+                if (item.StartsWith(SNO))
+                {
+                    currentstudent = item;
+                    break;
+                }
+            }
+            return currentstudent;
+        }
+
+        
     }
 }
