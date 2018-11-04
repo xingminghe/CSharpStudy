@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gBoxStudentQuery = new System.Windows.Forms.GroupBox();
             this.txtQueryTel = new System.Windows.Forms.TextBox();
@@ -54,10 +54,10 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSubmig = new System.Windows.Forms.Button();
+            this.btnCommit = new System.Windows.Forms.Button();
             this.dtpBorthday = new System.Windows.Forms.DateTimePicker();
             this.btnSelectPic = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbCurrentPic = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             this.gBoxStudentQuery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.gBoxStudentDetail.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentPic)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -112,12 +112,14 @@
             // txtQueryTel
             // 
             this.txtQueryTel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtQueryTel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQueryTel.ForeColor = System.Drawing.Color.Yellow;
             this.txtQueryTel.Location = new System.Drawing.Point(554, 34);
             this.txtQueryTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryTel.Name = "txtQueryTel";
-            this.txtQueryTel.Size = new System.Drawing.Size(91, 19);
+            this.txtQueryTel.Size = new System.Drawing.Size(91, 23);
             this.txtQueryTel.TabIndex = 1;
-            this.txtQueryTel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtQueryTel.TextChanged += new System.EventHandler(this.txtQueryTel_TextChanged);
             // 
             // label3
             // 
@@ -132,12 +134,14 @@
             // txtQueryName
             // 
             this.txtQueryName.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtQueryName.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQueryName.ForeColor = System.Drawing.Color.Yellow;
             this.txtQueryName.Location = new System.Drawing.Point(293, 34);
             this.txtQueryName.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryName.Name = "txtQueryName";
-            this.txtQueryName.Size = new System.Drawing.Size(91, 19);
+            this.txtQueryName.Size = new System.Drawing.Size(91, 23);
             this.txtQueryName.TabIndex = 1;
-            this.txtQueryName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtQueryName.TextChanged += new System.EventHandler(this.txtQueryName_TextChanged);
             // 
             // label2
             // 
@@ -152,12 +156,14 @@
             // txtQueryNo
             // 
             this.txtQueryNo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtQueryNo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQueryNo.ForeColor = System.Drawing.Color.Yellow;
             this.txtQueryNo.Location = new System.Drawing.Point(77, 34);
             this.txtQueryNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtQueryNo.Name = "txtQueryNo";
-            this.txtQueryNo.Size = new System.Drawing.Size(91, 19);
+            this.txtQueryNo.Size = new System.Drawing.Size(91, 23);
             this.txtQueryNo.TabIndex = 1;
-            this.txtQueryNo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtQueryNo.TextChanged += new System.EventHandler(this.txtQueryNo_TextChanged);
             // 
             // label1
             // 
@@ -177,14 +183,14 @@
             this.dgvStudent.AllowUserToResizeColumns = false;
             this.dgvStudent.AllowUserToResizeRows = false;
             this.dgvStudent.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -197,21 +203,21 @@
             this.dgvStudent.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStudent.Name = "dgvStudent";
             this.dgvStudent.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStudent.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudent.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvStudent.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.dgvStudent.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.dgvStudent.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvStudent.RowTemplate.Height = 24;
             this.dgvStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudent.Size = new System.Drawing.Size(600, 220);
@@ -265,6 +271,7 @@
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnImport
             // 
@@ -294,6 +301,7 @@
             this.btnModify.TabIndex = 3;
             this.btnModify.Text = "修改";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
@@ -308,16 +316,17 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // gBoxStudentDetail
             // 
             this.gBoxStudentDetail.Controls.Add(this.rbFemale);
             this.gBoxStudentDetail.Controls.Add(this.rbMale);
             this.gBoxStudentDetail.Controls.Add(this.btnCancel);
-            this.gBoxStudentDetail.Controls.Add(this.btnSubmig);
+            this.gBoxStudentDetail.Controls.Add(this.btnCommit);
             this.gBoxStudentDetail.Controls.Add(this.dtpBorthday);
             this.gBoxStudentDetail.Controls.Add(this.btnSelectPic);
-            this.gBoxStudentDetail.Controls.Add(this.pictureBox2);
+            this.gBoxStudentDetail.Controls.Add(this.pbCurrentPic);
             this.gBoxStudentDetail.Controls.Add(this.label9);
             this.gBoxStudentDetail.Controls.Add(this.label8);
             this.gBoxStudentDetail.Controls.Add(this.label7);
@@ -350,7 +359,7 @@
             this.rbFemale.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(38, 17);
-            this.rbFemale.TabIndex = 3;
+            this.rbFemale.TabIndex = 4;
             this.rbFemale.TabStop = true;
             this.rbFemale.Text = "女";
             this.rbFemale.UseVisualStyleBackColor = false;
@@ -379,26 +388,30 @@
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(66, 26);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnSubmig
+            // btnCommit
             // 
-            this.btnSubmig.FlatAppearance.BorderSize = 2;
-            this.btnSubmig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmig.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmig.ForeColor = System.Drawing.Color.White;
-            this.btnSubmig.Location = new System.Drawing.Point(646, 43);
-            this.btnSubmig.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSubmig.Name = "btnSubmig";
-            this.btnSubmig.Size = new System.Drawing.Size(66, 26);
-            this.btnSubmig.TabIndex = 3;
-            this.btnSubmig.Text = "提交";
-            this.btnSubmig.UseVisualStyleBackColor = true;
+            this.btnCommit.FlatAppearance.BorderSize = 2;
+            this.btnCommit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCommit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCommit.ForeColor = System.Drawing.Color.White;
+            this.btnCommit.Location = new System.Drawing.Point(646, 43);
+            this.btnCommit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCommit.Name = "btnCommit";
+            this.btnCommit.Size = new System.Drawing.Size(66, 26);
+            this.btnCommit.TabIndex = 8;
+            this.btnCommit.Text = "提交";
+            this.btnCommit.UseVisualStyleBackColor = true;
+            this.btnCommit.Click += new System.EventHandler(this.btnCommit_Click);
             // 
             // dtpBorthday
             // 
+            this.dtpBorthday.CalendarForeColor = System.Drawing.Color.Yellow;
+            this.dtpBorthday.CalendarMonthBackground = System.Drawing.Color.Cyan;
             this.dtpBorthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBorthday.Location = new System.Drawing.Point(482, 32);
             this.dtpBorthday.Margin = new System.Windows.Forms.Padding(2);
@@ -413,19 +426,21 @@
             this.btnSelectPic.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectPic.Name = "btnSelectPic";
             this.btnSelectPic.Size = new System.Drawing.Size(46, 21);
-            this.btnSelectPic.TabIndex = 1;
+            this.btnSelectPic.TabIndex = 10;
             this.btnSelectPic.Text = "选择";
             this.btnSelectPic.UseVisualStyleBackColor = false;
+            this.btnSelectPic.Click += new System.EventHandler(this.btnSelectPic_Click);
             // 
-            // pictureBox2
+            // pbCurrentPic
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 118);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbCurrentPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbCurrentPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbCurrentPic.Location = new System.Drawing.Point(4, 16);
+            this.pbCurrentPic.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCurrentPic.Name = "pbCurrentPic";
+            this.pbCurrentPic.Size = new System.Drawing.Size(105, 118);
+            this.pbCurrentPic.TabIndex = 0;
+            this.pbCurrentPic.TabStop = false;
             // 
             // label9
             // 
@@ -489,7 +504,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 13);
-            this.label6.TabIndex = 0;
+            this.label6.TabIndex = 3;
             this.label6.Text = "性别";
             this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -513,8 +528,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(438, 23);
-            this.txtAddress.TabIndex = 1;
-            this.txtAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtAddress.TabIndex = 7;
             // 
             // txtEmail
             // 
@@ -525,8 +539,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(174, 23);
-            this.txtEmail.TabIndex = 1;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtEmail.TabIndex = 6;
             // 
             // txtTel
             // 
@@ -537,8 +550,7 @@
             this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(91, 23);
-            this.txtTel.TabIndex = 1;
-            this.txtTel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtTel.TabIndex = 5;
             // 
             // txtName
             // 
@@ -550,7 +562,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(91, 23);
             this.txtName.TabIndex = 1;
-            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNo
             // 
@@ -561,8 +572,7 @@
             this.txtNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNo.Name = "txtNo";
             this.txtNo.Size = new System.Drawing.Size(91, 23);
-            this.txtNo.TabIndex = 1;
-            this.txtNo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNo.TabIndex = 0;
             // 
             // btnExit
             // 
@@ -577,6 +587,7 @@
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormMain
             // 
@@ -603,7 +614,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();
             this.gBoxStudentDetail.ResumeLayout(false);
             this.gBoxStudentDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -630,7 +641,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.GroupBox gBoxStudentDetail;
         private System.Windows.Forms.Button btnSelectPic;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbCurrentPic;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.DateTimePicker dtpBorthday;
@@ -640,7 +651,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtNo;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnSubmig;
+        private System.Windows.Forms.Button btnCommit;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
