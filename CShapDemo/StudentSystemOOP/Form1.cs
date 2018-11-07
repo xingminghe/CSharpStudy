@@ -16,6 +16,7 @@ namespace StudentSystemOOP
     {
         private string fileName = string.Empty;
         private List<Students> objListStudent = new List<Students>();
+        private StudentService objStudentService = new StudentService();
         public Form1()
         {
             InitializeComponent();
@@ -46,12 +47,40 @@ namespace StudentSystemOOP
             dgvStudent.DataSource = null;
             dgvStudent.AutoGenerateColumns = false;
             dgvStudent.DataSource = objListStudent;
-           
+
+            //默认展示第一行学生信息明细
+            Students objStudent = objStudentService.GetStudentBySNO(dgvStudent.Rows[0].Cells[0].Value.ToString(), objListStudent);
+            LoadStudentToDetial(objStudent);
+        }
+
+        private void LoadStudentToDetial(Students objStudent)
+        {
+            txtNo.Text = objStudent.SNO;
+            txtName.Text = objStudent.Name;
+            if (objStudent.Gender == "男") rbMale.Checked = true;
+            else rbFemale.Checked = true;
+            dtpBorthday.Text = objStudent.Birthday.ToString();
+            txtTel.Text = objStudent.Mobile;
+            txtEmail.Text = objStudent.Email;
+            txtAddress.Text = objStudent.HomeAddress;
+            if (string.IsNullOrWhiteSpace(objStudent.PhotoPath)) return;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        private void dgvStudent_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvStudent.Rows.Count == 0) return;
+            if (dgvStudent.CurrentRow.Selected == false) return;
+            else
+            {
+                Students objStudent = objStudentService.GetStudentBySNO(dgvStudent.CurrentRow.Cells[0].Value.ToString(), objListStudent);
+                LoadStudentToDetial(objStudent);
+            }
+        }
+
     }
 }
