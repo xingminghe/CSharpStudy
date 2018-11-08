@@ -16,10 +16,13 @@ namespace StudentSystemOOP
     {
         private string fileName = string.Empty;
         private List<Students> objListStudent = new List<Students>();
+        private List<Students> objlistQuery = new List<Students>();
         private StudentService objStudentService = new StudentService();
+        private int actionFlag;
         public Form1()
         {
             InitializeComponent();
+            gBoxStudentDetail.Enabled = false;
         }
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -51,6 +54,7 @@ namespace StudentSystemOOP
             //默认展示第一行学生信息明细
             Students objStudent = objStudentService.GetStudentBySNO(dgvStudent.Rows[0].Cells[0].Value.ToString(), objListStudent);
             LoadStudentToDetial(objStudent);
+            objStudentService.GetAllStudentBySNO(txtQueryNo.Text.Trim(), objListStudent);
         }
 
         private void LoadStudentToDetial(Students objStudent)
@@ -82,5 +86,96 @@ namespace StudentSystemOOP
             }
         }
 
+        private void txtQueryNo_TextChanged(object sender, EventArgs e)
+        {
+            objlistQuery.Clear();
+            objlistQuery = objStudentService.GetAllStudentBySNO(txtQueryNo.Text, objListStudent);
+            dgvStudent.DataSource = objlistQuery;
+            if (objlistQuery == null)
+            {
+                Students objStudent = objStudentService.GetStudentBySNO(dgvStudent.CurrentRow.Cells[0].Value.ToString(), objListStudent);
+                LoadStudentToDetial(objStudent);
+            }
+            
+        }
+
+        private void txtQueryName_TextChanged(object sender, EventArgs e)
+        {
+            objlistQuery = objStudentService.GetAllStudentByName(txtQueryName.Text, objListStudent);
+            dgvStudent.DataSource = objlistQuery;
+        }
+
+        private void txtQueryTel_TextChanged(object sender, EventArgs e)
+        {
+            objlistQuery = objStudentService.GetAllStudentByMobile(txtQueryTel.Text, objListStudent);
+            dgvStudent.DataSource = objlistQuery;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            DisableButton();
+            txtNo.Text = string.Empty;
+            txtName.Text = string.Empty;
+            rbMale.Checked = true;
+            dtpBorthday.Text = DateTime.Now.ToString();
+            txtTel.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            pbCurrentPic.BackgroundImage = null;
+
+
+            txtNo.Focus();
+            actionFlag = 1;
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
+            actionFlag = 2;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCommit_Click(object sender, EventArgs e)
+        {
+            switch (actionFlag)
+            {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            EnableButton();
+            this.dgvStudent.DataSource = objListStudent;
+        }
+
+        private void  DisableButton()
+        {
+            btnAdd.Enabled = false;
+            btnModify.Enabled = false;
+            btnImport.Enabled = false;
+            btnDelete.Enabled = false;
+
+            gBoxStudentDetail.Enabled = true;
+        }
+
+        private void EnableButton()
+        {
+            btnAdd.Enabled = true;
+            btnModify.Enabled = true;
+            btnImport.Enabled = true;
+            btnDelete.Enabled = true;
+
+            gBoxStudentDetail.Enabled = false;
+        }
     }
 }
